@@ -44,7 +44,7 @@
 		else if(istype(tank,/obj/item/weapon/tank/oxygen))
 			overlays += "tank_oxyg"
 		else if(istype(tank,/obj/item/weapon/tank/plasma))
-			overlays += "tank_phoron"
+			overlays += "tank_plasma"
 		//else if(istype(tank,/obj/item/weapon/tank/hydrogen))
 		//	overlays += "tank_hydro"
 		else
@@ -110,7 +110,7 @@
 		var/action_type
 		if(available_options.len > 1)
 			action_type = input(usr, "What do you want to attach/detach?") as null|anything in available_options
-		else
+		else if(available_options.len)
 			action_type = available_options[1]
 		if(usr.stat == DEAD || !CanMouseDrop(target))
 			return
@@ -178,7 +178,7 @@
 	var/action_type
 	if(available_options.len > 1)
 		action_type = input(user, "What do you want to do?") as null|anything in available_options
-	else
+	else if(available_options.len)
 		action_type = available_options[1]
 	switch (action_type)
 		if ("Remove tank")
