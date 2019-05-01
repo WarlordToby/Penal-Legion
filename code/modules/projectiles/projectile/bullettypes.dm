@@ -26,6 +26,8 @@
 #define ARMOR_PENETRATION_65 15
 #define DAMAGE_762 20
 #define ARMOR_PENETRATION_762 15
+#define DAMAGE_AC 40
+#define ARMOR_PENETRATION_AC 35
 
 //Revolvers and high-caliber pistols
 #define ARMOR_PENETRATION_REVOLVER 12
@@ -291,6 +293,15 @@
 	embed = FALSE
 	sharp = FALSE
 
+/obj/item/projectile/bullet/autocannon
+	damage = DAMAGE_AC
+	armor_penetration = ARMOR_PENETRATION_AC
+	can_ricochet = TRUE
+
+	on_hit(var/atom/target, var/blocked = 0)
+		explosion(target, -1, 0, 2)
+		return 1
+
 #undef HIGH_VELOCITY_MULTIPLIER
 #undef RUBBER_DAMAGE_MULTIPLIER
 #undef RUBBER_AGONY_MULTIPLIER
@@ -325,3 +336,5 @@
 #undef DAMAGE_BEANBAG
 #undef AGONY_BEANBAG
 #undef ARMOR_PENETRATION_BEANBAG
+#undef DAMAGE_AC
+#undef ARMOR_PENETRATION_AC

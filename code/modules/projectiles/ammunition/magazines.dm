@@ -457,3 +457,12 @@
 
 /obj/item/ammo_magazine/a75/empty
 	initial_ammo = 0
+
+/obj/item/ammo_magazine/autocannon
+	name = "ammo box (Autocannon)"
+	icon_state = "75"
+	mag_type = MAG_WELL_BOX
+	caliber = "autocannon"
+	ammo_type = /obj/item/ammo_casing/autocannon
+	multiple_sprites = 1
+	max_ammo = 400

@@ -214,3 +214,12 @@
 	caliber = "14.5mm"
 	ammo_type = /obj/item/ammo_casing/a145
 	max_ammo = 30
+
+/obj/item/ammo_magazine/ammobox/autocannon
+	name = "ammunition box (autocannon)"
+	icon_state = "box145mm"
+	matter = list(MATERIAL_STEEL = 8)
+	w_class = ITEM_SIZE_LARGE
+	caliber = "autocannon"
+	ammo_type = /obj/item/ammo_casing/autocannon
+	max_ammo = 400
