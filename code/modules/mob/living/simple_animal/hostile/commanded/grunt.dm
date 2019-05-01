@@ -3,7 +3,7 @@
 	desc = "A penal legionaire grunt, just like any other. This one is a NPC."
 	speak_chance = 1
 
-	icon_state = "penallegion"
+	icon_state = "penal"
 	icon_dead = "legion_dead"
 	icon_gib = "syndicate_gib"
 	var/corpse = /obj/landmark/corpse/penal
@@ -44,6 +44,7 @@
 /mob/living/simple_animal/hostile/commanded/penal/rifle
 	name = "Penal legionaire"
 	desc = "A penal legionaire grunt, just like any other. This one is a NPC."
+	icon_state = "penalranged"
 	speak_chance = 1
 	ranged = 1
 	projectiletype = /obj/item/projectile/bullet
