@@ -41,7 +41,7 @@
 	item_state = "steelpads"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
-/obj/item/clothing/suit/armor/steel
+/obj/item/clothing/suit/armor/steel/heavy
 	name = "Steel-plate vest"
 	desc = "A carrier vest holding steel plates, hand and leg guards and pauldrons. An improvement over crude iron."
 	icon_state = "steelheavy"
