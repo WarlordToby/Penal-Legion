@@ -266,8 +266,8 @@
 	color = "#FF0000"
 	projectile_type = /obj/item/projectile/bullet/cap
 
-/obj/item/ammo_casing/autocannon
-	name = "autocannon shell."
-	desc = "A large autocannon shell."
-	caliber = "autocannon"
-	projectile_type = /obj/item/projectile/bullet/autocannon
+/obj/item/ammo_casing/C1autocannon
+	name = "C1 autocannon shell."
+	desc = "A large C1 autocannon shell."
+	caliber = "C1autocannon"
+	projectile_type = /obj/item/projectile/bullet/C1autocannon

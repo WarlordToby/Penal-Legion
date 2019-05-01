@@ -1098,3 +1098,11 @@
 /area/eris/storage/tech
 	name = "Technical Storage"
 	icon_state = "auxstorage"
+
+/area/eris/testroom
+	name = "Testing Room"
+	icon_state = "erisgreen"
+	flags = AREA_FLAG_RAD_SHIELDED
+	base_turf = /turf/simulated/floor/dirt
+	requires_power = 0
+	dynamic_lighting = 0

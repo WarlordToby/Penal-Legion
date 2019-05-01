@@ -215,11 +215,11 @@
 	ammo_type = /obj/item/ammo_casing/a145
 	max_ammo = 30
 
-/obj/item/ammo_magazine/ammobox/autocannon
-	name = "ammunition box (autocannon)"
+/obj/item/ammo_magazine/ammobox/C1autocannon
+	name = "ammunition box (C1 autocannon)"
 	icon_state = "box145mm"
 	matter = list(MATERIAL_STEEL = 8)
 	w_class = ITEM_SIZE_LARGE
-	caliber = "autocannon"
-	ammo_type = /obj/item/ammo_casing/autocannon
+	caliber = "C1autocannon"
+	ammo_type = /obj/item/ammo_casing/C1autocannon
 	max_ammo = 400

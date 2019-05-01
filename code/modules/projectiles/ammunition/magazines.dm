@@ -458,11 +458,23 @@
 /obj/item/ammo_magazine/a75/empty
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/autocannon
-	name = "ammo box (Autocannon)"
+/obj/item/ammo_magazine/C1autocannon
+	name = "magazine box (C1 Autocannon)"
 	icon_state = "75"
-	mag_type = MAG_WELL_BOX
-	caliber = "autocannon"
-	ammo_type = /obj/item/ammo_casing/autocannon
-	multiple_sprites = 1
+	mag_type = MAGAZINE
+	mag_well = MAG_WELL_BOX
+	caliber = "C1autocannon"
+	ammo_type = /obj/item/ammo_casing/C1autocannon
 	max_ammo = 400
+
+/obj/item/ammo_magazine/a762
+	name = "magazine box (7.62mm)"
+	icon_state = "a762"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	mag_well = MAG_WELL_BOX
+	caliber = "a762"
+	matter = list(MATERIAL_STEEL = 8)
+	ammo_type = /obj/item/ammo_casing/a762
+	max_ammo = 50
+	multiple_sprites = 1

@@ -1,7 +1,7 @@
 /decl/hierarchy/outfit/job/captain
 	name = OUTFIT_JOB_NAME("Captain")
 	head = /obj/item/clothing/head/caphat
-	glasses = /obj/item/clothing/glasses/sunglasses
+	glasses = /obj/item/clothing/glasses/night
 	uniform = /obj/item/clothing/under/rank/captain
 	l_ear = /obj/item/device/radio/headset/heads/captain
 	shoes = /obj/item/clothing/shoes/color/brown

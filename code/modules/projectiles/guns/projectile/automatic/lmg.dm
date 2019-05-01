@@ -84,3 +84,38 @@
 	icon_base = "pk"
 	icon_state = "pkclosed-empty"
 	item_state = "pkclosedmag"
+
+/obj/item/weapon/gun/projectile/automatic/lmg/autocannon
+	name = "C1 Autocannon"
+	desc = "A mobile autocannon that rains down hell upon enemy positions. Can be loaded with different munitions"
+	icon_base = "C1"
+	icon_state = "C1closed-empty"
+	item_state = "C1closedmag"
+	w_class = ITEM_SIZE_HUGE
+	icon = 'icons/obj/weapons/autocannon.dmi'
+	force = WEAPON_FORCE_PAINFUL
+	slot_flags = 0
+	caliber = "C1autocannon"
+	ammo_type = /obj/item/ammo_casing/C1autocannon
+	max_shells = 400
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	slot_flags = SLOT_BACK
+	load_method = MAGAZINE
+	mag_well = MAG_WELL_BOX
+	magazine_type = /obj/item/ammo_magazine/C1autocannon
+	tac_reloads = FALSE
+	matter = list(MATERIAL_PLASTEEL = 40, MATERIAL_PLASTIC = 15, MATERIAL_WOOD = 5)
+	price_tag = 5000
+	unload_sound 	= 'sound/weapons/guns/interact/lmg_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/lmg_magin.ogg'
+	cocked_sound 	= 'sound/weapons/guns/interact/lmg_cock.ogg'
+	fire_sound = 'sound/weapons/guns/fire/lmg_fire.ogg'
+	recoil = 1.2 //it's basically 600 RPM of 7.62
+
+	firemodes = list(
+		FULL_AUTO_600,
+		list(mode_name="short bursts",	burst=5, move_delay=6, dispersion = list(0.6, 1.0, 1.0, 1.0, 1.2), icon="burst"),
+		list(mode_name="long bursts",	burst=12, move_delay=8, dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2), icon="burst"),
+		)
+
+	cover_open = 0

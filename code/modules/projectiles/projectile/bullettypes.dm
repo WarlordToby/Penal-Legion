@@ -293,7 +293,7 @@
 	embed = FALSE
 	sharp = FALSE
 
-/obj/item/projectile/bullet/autocannon
+/obj/item/projectile/bullet/C1autocannon
 	damage = DAMAGE_AC
 	armor_penetration = ARMOR_PENETRATION_AC
 	can_ricochet = TRUE
